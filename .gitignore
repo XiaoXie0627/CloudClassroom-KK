@@ -42,3 +42,4 @@ build/
 **/src/main/resources/*.yaml
 *.yml
 *.yaml
+test.txt
