@@ -7,9 +7,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day01 基础环境搭建">
+    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="更新ignore">
+      <change afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mybatis-sql-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-support/ymcc-service-gateway/src/main/java/com/ymcc/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-support/ymcc-service-gateway/src/main/java/com/ymcc/gateway/GatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-support/ymcc-service-gateway/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-support/ymcc-service-gateway/src/main/resources/bootstrap.yml" beforeDir="false" />
     </list>
@@ -28,12 +37,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/XiaoXie0627/CloudClassroom-KK.git",
-    "accountId": "2ed31495-5885-4449-907e-3689ec890a0b"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;XiaoXie0627&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/XiaoXie0627/CloudClassroom-KK.git&quot;,
+    &quot;accountId&quot;: &quot;2ed31495-5885-4449-907e-3689ec890a0b&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -82,16 +97,16 @@
     "Spring Boot.ServiceSystemApp.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Software/KKProject/cjc-ymcc",
+    "last_opened_file_path": "E:/Software/KKProject/itsource-ymcc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true",
     "应用程序.GenteratorCode (1).executor": "Run",
     "应用程序.GenteratorCode.executor": "Run"
@@ -117,7 +132,7 @@
       <recent name="com.ymcc.gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceSystemApp">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="GenteratorCode (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ymcc.gencode.GenteratorCode" />
       <module name="project-gen-code" />
@@ -172,8 +187,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceSystemApp" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.ServiceSystemApp" />
         <item itemvalue="应用程序.GenteratorCode" />
         <item itemvalue="应用程序.GenteratorCode (1)" />
       </list>
@@ -206,7 +221,12 @@
       <workItem from="1758828686513" duration="7551000" />
       <workItem from="1758839896836" duration="485000" />
       <workItem from="1758840451048" duration="28000" />
-      <workItem from="1758840600654" duration="386000" />
+      <workItem from="1758840600654" duration="650000" />
+      <workItem from="1758841404002" duration="66000" />
+      <workItem from="1758841489388" duration="10000" />
+      <workItem from="1758841563292" duration="93000" />
+      <workItem from="1758841667986" duration="176000" />
+      <workItem from="1758841861376" duration="871000" />
     </task>
     <task id="LOCAL-00001" summary="day01 基础环境搭建">
       <option name="closed" value="true" />
@@ -216,7 +236,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758840824214</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day01 基础环境搭建">
+      <option name="closed" value="true" />
+      <created>1758841171064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758841171064</updated>
+    </task>
+    <task id="LOCAL-00003" summary="day01 基础环境搭建">
+      <option name="closed" value="true" />
+      <created>1758841242056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758841242056</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更新ignore">
+      <option name="closed" value="true" />
+      <created>1758842353997</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758842353997</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +268,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day01 基础环境搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="day01 基础环境搭建" />
+    <MESSAGE value="更新ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新ignore" />
   </component>
 </project>
