@@ -1,16 +1,18 @@
 package com.ymcc.service.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ymcc.common.result.ResponseResult;
 import com.ymcc.service.service.ISystemdictionaryService;
 import com.ymcc.pojo.domain.Systemdictionary;
 import com.ymcc.pojo.query.SystemdictionaryQuery;
-import com.ymcc.common.result.JSONResult;
 import com.ymcc.common.result.PageList;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/systemdictionary")
+@Api("系统数据字典相关接口")
 public class SystemdictionaryController {
 
     @Autowired
@@ -20,30 +22,30 @@ public class SystemdictionaryController {
     * 保存和修改公用的
     */
     @RequestMapping(value="/save",method= RequestMethod.POST)
-    public JSONResult saveOrUpdate(@RequestBody Systemdictionary systemdictionary){
+    public ResponseResult saveOrUpdate(@RequestBody Systemdictionary systemdictionary){
         if(systemdictionary.getId()!=null){
             systemdictionaryService.updateById(systemdictionary);
         }else{
             systemdictionaryService.save(systemdictionary);
         }
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
     * 删除对象
     */
     @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
-    public JSONResult delete(@PathVariable("id") Long id){
+    public ResponseResult delete(@PathVariable("id") Long id){
         systemdictionaryService.removeById(id);
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
    * 获取对象
    */
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public JSONResult get(@PathVariable("id")Long id){
-        return JSONResult.success(systemdictionaryService.getById(id));
+    public ResponseResult get(@PathVariable("id")Long id){
+        return ResponseResult.success(systemdictionaryService.getById(id));
     }
 
 
@@ -51,8 +53,8 @@ public class SystemdictionaryController {
     * 查询所有对象
     */
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public JSONResult list(){
-        return JSONResult.success(systemdictionaryService.list());
+    public ResponseResult list(){
+        return ResponseResult.success(systemdictionaryService.list());
     }
 
 
@@ -61,9 +63,9 @@ public class SystemdictionaryController {
     */
     //TODO
     @RequestMapping(value = "/pagelist",method = RequestMethod.POST)
-    public JSONResult page(@RequestBody SystemdictionaryQuery query){
+    public ResponseResult page(@RequestBody SystemdictionaryQuery query){
         Page<Systemdictionary> page = new Page<Systemdictionary>(query.getPage(),query.getRows());
         page = systemdictionaryService.page(page);
-        return JSONResult.success(new PageList<Systemdictionary>(page.getTotal(),page.getRecords()));
+        return ResponseResult.success(new PageList<Systemdictionary>(page.getTotal(),page.getRecords()));
     }
 }

@@ -16,7 +16,7 @@
         <result column="oper_ip" property="operIp" />
         <result column="oper_location" property="operLocation" />
         <result column="oper_param" property="operParam" />
-        <result column="json_result" property="jsonResult" />
+        <result column="json_result" property="responseResult" />
         <result column="status" property="status" />
         <result column="error_msg" property="errorMsg" />
         <result column="oper_time" property="operTime" />

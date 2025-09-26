@@ -25,7 +25,7 @@
         <java.version>1.8</java.version>
         <ymcc.version>1.0-SNAPSHOT</ymcc.version>
     </properties>
-
+    <!-- 包管理应该在公共依赖做，而不是直接引用父工程，做到清晰可见易管理 -->
     <!--SpringBoot-->
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -73,6 +73,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+<!--            MP管理-->
+            <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-bom</artifactId>
+            <version>3.5.14</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
         </dependencies>
     </dependencyManagement>
 <!--    编译和构建工具-->

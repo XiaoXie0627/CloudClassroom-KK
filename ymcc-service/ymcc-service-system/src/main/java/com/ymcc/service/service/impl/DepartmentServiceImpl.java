@@ -1,7 +1,11 @@
 package com.ymcc.service.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.ymcc.common.result.PageList;
 import com.ymcc.pojo.domain.Department;
+import com.ymcc.pojo.query.DepartmentQuery;
 import com.ymcc.service.mapper.DepartmentMapper;
 import com.ymcc.service.service.IDepartmentService;
 import org.springframework.stereotype.Service;
@@ -17,4 +21,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class DepartmentServiceImpl extends ServiceImpl<DepartmentMapper, Department> implements IDepartmentService {
 
+    @Override
+    public PageList<Department> pageQuery(DepartmentQuery query) {
+        //page查询 select * from department where name like %test% limit pagenum,pagesize
+        Page<Department> departmentPage = this.lambdaQuery()
+                .like(query.getKeyword()!= null,Department::getName, query.getKeyword())
+                .orderBy(query.getSortField()!= null, "asc".equals(query.getSortType()),Department::getName)
+                .page(new Page<Department>(query.getPage(),query.getRows()));
+        //结果封装返回
+        return new PageList<Department>(departmentPage.getTotal(),departmentPage.getRecords());
+    }
 }

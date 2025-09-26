@@ -3,7 +3,7 @@ package ${package.Controller};
 import ${package.Service}.${table.serviceName};
 import ${package.Entity}.${entity};
 import com.ymcc.common.query.${entity}Query;
-import com.ymcc.common.result.JSONResult;
+import com.ymcc.common.result.ResponseResult;
 import com.ymcc.common.result.PageList;
 import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.beans.factory.annotation.Autowired;

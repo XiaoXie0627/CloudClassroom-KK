@@ -6,7 +6,7 @@ import lombok.Data;
  * 响应封装结果
  */
 @Data
-public class JSONResult {
+public class ResponseResult {
 
     private boolean success = true;
 
@@ -15,44 +15,44 @@ public class JSONResult {
     //错误码，用来描述错误类型 ，20000 表示么有错误
     private String code = "20000";
 
-    //返回的数据
+    //返回的数据 也可以做泛型处理
     private Object data;
 
     /** 创建当前实例 **/
-    public static JSONResult success(){
-        return new JSONResult();
+    public static ResponseResult success(){
+        return new ResponseResult();
     }
     /** 创建当前实例 **/
-    public static JSONResult success(Object obj){
-        JSONResult instance = new JSONResult();
+    public static ResponseResult success(Object obj){
+        ResponseResult instance = new ResponseResult();
         instance.setData(obj);
         return instance;
     }
 
-    public static JSONResult success(Object obj,String code){
-        JSONResult instance = new JSONResult();
+    public static ResponseResult success(Object obj, String code){
+        ResponseResult instance = new ResponseResult();
         instance.setCode(code);
         instance.setData(obj);
         return instance;
     }
     /** 创建当前实例 **/
 
-    public static JSONResult error(String message,String code){
-        JSONResult instance = new JSONResult();
+    public static ResponseResult error(String message, String code){
+        ResponseResult instance = new ResponseResult();
         instance.setMessage(message);
         instance.setSuccess(false);
         instance.setCode(code);
         return instance;
     }
 
-    public static JSONResult error(){
-        JSONResult jsonResult = new JSONResult();
-        jsonResult.setSuccess(false);
-        return jsonResult;
+    public static ResponseResult error(){
+        ResponseResult responseResult = new ResponseResult();
+        responseResult.setSuccess(false);
+        return responseResult;
     }
 
     /** 创建当前实例 **/
-    public static JSONResult error(String message){
+    public static ResponseResult error(String message){
         return error(message,null);
     }
 

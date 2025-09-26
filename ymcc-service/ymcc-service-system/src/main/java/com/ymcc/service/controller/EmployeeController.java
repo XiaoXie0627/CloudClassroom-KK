@@ -1,16 +1,19 @@
 package com.ymcc.service.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ymcc.common.result.ResponseResult;
+import com.ymcc.pojo.domain.Department;
 import com.ymcc.service.service.IEmployeeService;
 import com.ymcc.pojo.domain.Employee;
 import com.ymcc.pojo.query.EmployeeQuery;
-import com.ymcc.common.result.JSONResult;
 import com.ymcc.common.result.PageList;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/employee")
+@Api("员工相关接口")
 public class EmployeeController {
 
     @Autowired
@@ -20,30 +23,30 @@ public class EmployeeController {
     * 保存和修改公用的
     */
     @RequestMapping(value="/save",method= RequestMethod.POST)
-    public JSONResult saveOrUpdate(@RequestBody Employee employee){
+    public ResponseResult saveOrUpdate(@RequestBody Employee employee){
         if(employee.getId()!=null){
             employeeService.updateById(employee);
         }else{
             employeeService.save(employee);
         }
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
     * 删除对象
     */
     @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
-    public JSONResult delete(@PathVariable("id") Long id){
+    public ResponseResult delete(@PathVariable("id") Long id){
         employeeService.removeById(id);
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
    * 获取对象
    */
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public JSONResult get(@PathVariable("id")Long id){
-        return JSONResult.success(employeeService.getById(id));
+    public ResponseResult get(@PathVariable("id")Long id){
+        return ResponseResult.success(employeeService.getById(id));
     }
 
 
@@ -51,19 +54,17 @@ public class EmployeeController {
     * 查询所有对象
     */
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public JSONResult list(){
-        return JSONResult.success(employeeService.list());
+    public ResponseResult list(){
+        return ResponseResult.success(employeeService.list());
     }
 
 
     /**
-    * 带条件分页查询数据
+    * 带条件分页查询数据 可根据姓名排序
     */
-    //TODO 分页查询条件补全
     @RequestMapping(value = "/pagelist",method = RequestMethod.POST)
-    public JSONResult page(@RequestBody EmployeeQuery query){
-        Page<Employee> page = new Page<Employee>(query.getPage(),query.getRows());
-        page = employeeService.page(page);
-        return JSONResult.success(new PageList<Employee>(page.getTotal(),page.getRecords()));
+    public ResponseResult page(@RequestBody EmployeeQuery query){
+        PageList<Employee> pageList = employeeService.pageQuery(query);
+        return ResponseResult.success(pageList);
     }
 }

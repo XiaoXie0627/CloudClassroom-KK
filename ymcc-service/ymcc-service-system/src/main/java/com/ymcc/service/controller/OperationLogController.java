@@ -1,16 +1,19 @@
 package com.ymcc.service.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ymcc.common.result.ResponseResult;
 import com.ymcc.service.service.IOperationLogService;
 import com.ymcc.pojo.domain.OperationLog;
 import com.ymcc.pojo.query.OperationLogQuery;
-import com.ymcc.common.result.JSONResult;
 import com.ymcc.common.result.PageList;
+import io.swagger.annotations.Api;
+import org.apiguardian.api.API;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/operationLog")
+@Api("日志相关接口")
 public class OperationLogController {
 
     @Autowired
@@ -20,30 +23,30 @@ public class OperationLogController {
     * 保存和修改公用的
     */
     @RequestMapping(value="/save",method= RequestMethod.POST)
-    public JSONResult saveOrUpdate(@RequestBody OperationLog operationLog){
+    public ResponseResult saveOrUpdate(@RequestBody OperationLog operationLog){
         if(operationLog.getId()!=null){
             operationLogService.updateById(operationLog);
         }else{
             operationLogService.save(operationLog);
         }
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
     * 删除对象
     */
     @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
-    public JSONResult delete(@PathVariable("id") Long id){
+    public ResponseResult delete(@PathVariable("id") Long id){
         operationLogService.removeById(id);
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
    * 获取对象
    */
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public JSONResult get(@PathVariable("id")Long id){
-        return JSONResult.success(operationLogService.getById(id));
+    public ResponseResult get(@PathVariable("id")Long id){
+        return ResponseResult.success(operationLogService.getById(id));
     }
 
 
@@ -51,8 +54,8 @@ public class OperationLogController {
     * 查询所有对象
     */
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public JSONResult list(){
-        return JSONResult.success(operationLogService.list());
+    public ResponseResult list(){
+        return ResponseResult.success(operationLogService.list());
     }
 
 
@@ -61,9 +64,9 @@ public class OperationLogController {
     */
     //TODO
     @RequestMapping(value = "/pagelist",method = RequestMethod.POST)
-    public JSONResult page(@RequestBody OperationLogQuery query){
+    public ResponseResult page(@RequestBody OperationLogQuery query){
         Page<OperationLog> page = new Page<OperationLog>(query.getPage(),query.getRows());
         page = operationLogService.page(page);
-        return JSONResult.success(new PageList<OperationLog>(page.getTotal(),page.getRecords()));
+        return ResponseResult.success(new PageList<OperationLog>(page.getTotal(),page.getRecords()));
     }
 }

@@ -35,9 +35,21 @@
             <version>1.2.6</version>
         </dependency>
         <!--        MP集成 注意分页插件-->
+        <!-- spring boot2 引入可选模块 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+
+        <!-- 分页插件 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-jsqlparser-4.9</artifactId>
+        </dependency>
+        <!-- 代码生成器 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
             <version>3.5.14</version>
         </dependency>
         <!--        HUtool工具类-->

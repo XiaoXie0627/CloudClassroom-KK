@@ -4,13 +4,15 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ymcc.pojo.domain.Config;
 import com.ymcc.service.service.IConfigService;
 import com.ymcc.pojo.query.ConfigQuery;
-import com.ymcc.common.result.JSONResult;
+import com.ymcc.common.result.ResponseResult;
 import com.ymcc.common.result.PageList;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/config")
+@Api("配置接口")
 public class ConfigController {
 
     @Autowired
@@ -20,30 +22,30 @@ public class ConfigController {
     * 保存和修改公用的
     */
     @RequestMapping(value="/save",method= RequestMethod.POST)
-    public JSONResult saveOrUpdate(@RequestBody Config config){
+    public ResponseResult saveOrUpdate(@RequestBody Config config){
         if(config.getId()!=null){
             configService.updateById(config);
         }else{
             configService.save(config);
         }
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
     * 删除对象
     */
     @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
-    public JSONResult delete(@PathVariable("id") Long id){
+    public ResponseResult delete(@PathVariable("id") Long id){
         configService.removeById(id);
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
    * 获取对象
    */
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public JSONResult get(@PathVariable("id")Long id){
-        return JSONResult.success(configService.getById(id));
+    public ResponseResult get(@PathVariable("id")Long id){
+        return ResponseResult.success(configService.getById(id));
     }
 
 
@@ -51,8 +53,8 @@ public class ConfigController {
     * 查询所有对象
     */
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public JSONResult list(){
-        return JSONResult.success(configService.list());
+    public ResponseResult list(){
+        return ResponseResult.success(configService.list());
     }
 
 
@@ -60,9 +62,9 @@ public class ConfigController {
     * 带条件分页查询数据
     */
     @RequestMapping(value = "/pagelist",method = RequestMethod.POST)
-    public JSONResult page(@RequestBody ConfigQuery query){
+    public ResponseResult page(@RequestBody ConfigQuery query){
         Page<Config> page = new Page<Config>(query.getPage(),query.getRows());
         page = configService.page(page);
-        return JSONResult.success(new PageList<Config>(page.getTotal(),page.getRecords()));
+        return ResponseResult.success(new PageList<Config>(page.getTotal(),page.getRecords()));
     }
 }

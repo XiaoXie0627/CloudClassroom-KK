@@ -2,7 +2,7 @@ package com.ymcc.common.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+//自定义断言工具 也就是判断校验工具
 public class AssertUtil {
 
     //手机的正则表达式

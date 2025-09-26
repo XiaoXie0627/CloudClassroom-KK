@@ -1,7 +1,9 @@
 package com.ymcc.service.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ymcc.common.result.PageList;
 import com.ymcc.pojo.domain.Employee;
+import com.ymcc.pojo.query.EmployeeQuery;
 
 /**
  * <p>
@@ -13,4 +15,5 @@ import com.ymcc.pojo.domain.Employee;
  */
 public interface IEmployeeService extends IService<Employee> {
 
+    PageList<Employee> pageQuery(EmployeeQuery query);
 }
