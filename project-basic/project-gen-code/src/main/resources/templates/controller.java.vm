@@ -20,30 +20,30 @@ public class ${entity}Controller {
     * 保存和修改公用的
     */
     @RequestMapping(value="/save",method= RequestMethod.POST)
-    public JSONResult saveOrUpdate(@RequestBody ${entity} ${table.entityPath}){
+    public ResponseResult saveOrUpdate(@RequestBody ${entity} ${table.entityPath}){
         if(${table.entityPath}.getId()!=null){
             ${table.entityPath}Service.updateById(${table.entityPath});
         }else{
-            ${table.entityPath}Service.insert(${table.entityPath});
+            ${table.entityPath}Service.saveOrUpdate(${table.entityPath});
         }
-        return JSONResult.success();
+        return ResponseResult.success();
     }
 
     /**
     * 删除对象
     */
     @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
-    public JSONResult delete(@PathVariable("id") Long id){
-        ${table.entityPath}Service.deleteById(id);
-        return JSONResult.success();
+    public ResponseResult delete(@PathVariable("id") Long id){
+        ${table.entityPath}Service.removeById(id);
+        return ResponseResult.success();
     }
 
     /**
    * 获取对象
    */
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public JSONResult get(@PathVariable("id")Long id){
-        return JSONResult.success(${table.entityPath}Service.selectById(id));
+    public ResponseResult get(@PathVariable("id")Long id){
+        return ResponseResult.success(${table.entityPath}Service.getById(id));
     }
 
 
@@ -51,8 +51,8 @@ public class ${entity}Controller {
     * 查询所有对象
     */
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public JSONResult list(){
-        return JSONResult.success(${table.entityPath}Service.selectList(null));
+    public ResponseResult list(){
+        return ResponseResult.success(${table.entityPath}Service.list());
     }
 
 
@@ -60,9 +60,9 @@ public class ${entity}Controller {
     * 带条件分页查询数据
     */
     @RequestMapping(value = "/pagelist",method = RequestMethod.POST)
-    public JSONResult page(@RequestBody ${entity}Query query){
+    public ResponseResult page(@RequestBody ${entity}Query query){
         Page<${entity}> page = new Page<${entity}>(query.getPage(),query.getRows());
-        page = ${table.entityPath}Service.selectPage(page);
-        return JSONResult.success(new PageList<${entity}>(page.getTotal(),page.getRecords()));
+        page = ${table.entityPath}Service.page(page);
+        return ResponseResult.success(new PageList<${entity}>(page.getTotal(),page.getRecords()));
     }
 }

@@ -7,39 +7,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="更新ignore">
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/ThrowUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/java/com/ymcc/gencode/CodeGeneratorUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-uaa.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-user.properties" afterDir="false" />
+    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day02-protest">
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/domain/AccountFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/domain/UserAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/domain/UserAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/domain/UserBaseInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/domain/UserGrowLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/domain/UserRealInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/query/AccountFlowQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/query/UserAccountQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/query/UserAddressQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/query/UserBaseInfoQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/query/UserGrowLogQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/query/UserQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/query/UserRealInfoQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/java/com/ymcc/service/ServiceUaaApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/ServiceUserApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/controller/AccountFlowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/controller/UserAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/controller/UserAddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/controller/UserBaseInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/controller/UserGrowLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/controller/UserRealInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/mapper/AccountFlowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/mapper/UserAccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/mapper/UserAddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/mapper/UserBaseInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/mapper/UserGrowLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/mapper/UserRealInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/IAccountFlowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/IUserAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/IUserAddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/IUserBaseInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/IUserGrowLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/IUserRealInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/impl/AccountFlowServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/impl/UserAccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/impl/UserAddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/impl/UserBaseInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/impl/UserGrowLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/impl/UserRealInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/service/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/result/JSONResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/result/ResponseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/util/AssertUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/util/AssertUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/java/com/ymcc/gencode/CodeGeneratorUser.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/java/com/ymcc/gencode/GenteratorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/java/com/ymcc/gencode/GenteratorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-user.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/templates/controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/templates/controller.java.vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-basic/ymcc-basic-dependency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-basic/ymcc-basic-dependency/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-basic/ymcc-basic-dependency/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-basic/ymcc-basic-dependency/todo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/ConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/templates/query.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/templates/query.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-system/src/main/java/com/ymcc/pojo/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-system/src/main/java/com/ymcc/pojo/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-uaa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-uaa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/OperationLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/OperationLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/SystemdictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/SystemdictionaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/SystemdictionaryitemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/controller/SystemdictionaryitemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/service/IDepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/service/IDepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/service/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/service/IEmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/java/com/ymcc/service/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/resources/com/ymcc/service/mapper/OperationLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-system/src/main/resources/com/ymcc/service/mapper/OperationLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,74 +128,77 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Maven.itsource-ymcc [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ymcc-service-system [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceSystemApp.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Software/KKProject/itsource-ymcc/project-basic/project-gen-code/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.GenteratorCode (1).executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.GenteratorCode.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Maven.itsource-ymcc [clean].executor": "Run",
+    "Maven.ymcc-service-system [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.ServiceSystemApp.executor": "Debug",
+    "Spring Boot.ServiceUaaApp.executor": "Debug",
+    "Spring Boot.ServiceUserApp.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Software/KKProject/itsource-ymcc/ymcc-service/ymcc-service-user/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.CodeGeneratorUser.executor": "Run",
+    "应用程序.GenteratorCode (1).executor": "Run",
+    "应用程序.GenteratorCode.executor": "Debug"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-user\src\main\resources" />
+      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-uaa\src\main\resources" />
       <recent name="E:\Software\KKProject\itsource-ymcc\project-basic\project-gen-code\src\main\resources" />
       <recent name="E:\Software\KKProject\itsource-ymcc\project-basic\project-gen-code\src\main\resources\templates" />
       <recent name="E:\Software\KKProject\itsource-ymcc\project-basic\project-basic-common\src\main\java\com\ymcc\common" />
-      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-system\src\main\resources" />
-      <recent name="E:\Software\KKProject\itsource-ymcc\project-basic\project-gen-code\src\main\java\com\ymcc\gencode" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Software\KKProject\itsource-ymcc\project-basic\project-gen-code\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ymcc.service" />
+      <recent name="com.ymcc.gencode" />
       <recent name="com.ymcc.gateway" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceSystemApp">
-    <configuration name="GenteratorCode (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ymcc.gencode.GenteratorCode" />
-      <module name="project-gen-code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ymcc.gencode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ServiceUaaApp">
     <configuration name="GenteratorCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ymcc.gencode.GenteratorCode" />
       <module name="project-gen-code" />
@@ -207,12 +238,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceUaaApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ymcc-service-uaa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.service.ServiceUaaApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ymcc.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceUserApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ymcc-service-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.service.ServiceUserApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ymcc.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServiceUserApp" />
+        <item itemvalue="Spring Boot.ServiceUaaApp" />
         <item itemvalue="Spring Boot.ServiceSystemApp" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="应用程序.GenteratorCode" />
-        <item itemvalue="应用程序.GenteratorCode (1)" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +309,7 @@
       <workItem from="1758841861376" duration="1189000" />
       <workItem from="1758872238635" duration="18757000" />
       <workItem from="1758918655012" duration="642000" />
-      <workItem from="1758927294029" duration="1187000" />
+      <workItem from="1758927294029" duration="11049000" />
     </task>
     <task id="LOCAL-00001" summary="day01 基础环境搭建">
       <option name="closed" value="true" />
@@ -293,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758842817635</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="day02-protest">
+      <option name="closed" value="true" />
+      <created>1758928596977</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758928596977</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +368,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day01 基础环境搭建" />
     <MESSAGE value="更新ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新ignore" />
+    <MESSAGE value="day02-protest" />
+    <option name="LAST_COMMIT_MESSAGE" value="day02-protest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,6 +1,7 @@
 package com.ymcc.common.exception;
 import com.ymcc.common.result.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -30,8 +31,13 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(RuntimeException.class)
-    public ResponseResult businessExceptionHandler(RuntimeException e) {
+    public ResponseResult runtimeExceptionHandler(RuntimeException e) {
         log.error("RuntimeException", e);
+        return ResponseResult.error("系统错误",String.valueOf(ErrorCode.SYSTEM_ERROR.getCode()));
+    }
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseResult methodArgumentNotValidExceptionHandler(MethodArgumentNotValidException e) {
+        log.error("ValidException", e);
         return ResponseResult.error("系统错误",String.valueOf(ErrorCode.SYSTEM_ERROR.getCode()));
     }
 }

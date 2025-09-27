@@ -5,6 +5,9 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -26,11 +29,13 @@ public class Employee extends Model<Employee> {
     /**
      * 姓名
      */
+    @NotEmpty(message = "用户名不能为空")
     @TableField("real_name")
     private String realName;
     /**
      * 电话
      */
+    @NotEmpty(message = "电话不能为空")
     private String tel;
     /**
      * 邮箱

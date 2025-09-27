@@ -1,23 +1,23 @@
 package com.ymcc.gencode;
 
-import com.baomidou.mybatisplus.annotation.DbType;
-import com.baomidou.mybatisplus.core.config.GlobalConfig;
-import com.baomidou.mybatisplus.core.metadata.TableInfo;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
+import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
+import com.baomidou.mybatisplus.generator.config.po.TableInfo;
+import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 import java.util.*;
 
 /**
- * 生成代码的主类
+ * 生成代码的主类  MP的老的代码生成器
  */
 public class GenteratorCode {
 
     public static void main(String[] args) throws InterruptedException {
         //用来获取Mybatis-Plus.properties文件的配置信息
-        ResourceBundle rb = ResourceBundle.getBundle("mybatiesplus-config-system"); //不要加后缀
+        ResourceBundle rb = ResourceBundle.getBundle("mybatiesplus-config-uaa"); //不要加后缀
         AutoGenerator mpg = new AutoGenerator();
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
@@ -44,20 +44,24 @@ public class GenteratorCode {
         strategy.setTablePrefix(new String[] { "t_" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
 
+        // 你要生成哪些表
         strategy.setInclude(new String[]{
-                "t_config",
-                "t_department",
-                "t_employee",
-                "t_operation_log",
-                "t_systemdictionary",
-                "t_systemdictionaryitem"
+                "oauth_client_details",
+                "oauth_code",
+                "t_login",
+                "t_login_log",
+                "t_login_role",
+                "t_menu",
+                "t_permission",
+                "t_role",
+                "t_role_permission"
         }); // 需要生成的表
 
         mpg.setStrategy(strategy);
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent(rb.getString("parent"));  ///com.ymcc.service
-        pc.setController("controller"); //com.ymcc.service.controller
+        pc.setParent(rb.getString("parent"));  //cn.cjc.ymcc
+        pc.setController("controller"); //cn.cjc.ymcc.web.controller
         pc.setService("service");
         pc.setServiceImpl("service.impl");
         pc.setEntity("domain");
