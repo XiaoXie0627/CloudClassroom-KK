@@ -1,0 +1,10 @@
+common是公共服务
+由于包不在SpringBoot的目录下
+正常的启动SpringBoot项目不在将Bean注入SpringBoot中
+这时候就是相当于开发SDK，SPI机制
+- 实现自动注入和装配
+- 在Resource目录下META-INF中创建spring.factories文件将 类的全路径下入SpringBoot文件中实现自动装配
+- 还可以了解一手[spring-configuration-metadata.json]文件用户解释spring依赖，标准的SPI开发模式
+
+我去，一个项目，有人学了收获非常大，有人学了跟没有学一样，这就是知识和思考差距 不要懒惰JustDoIt！
+文档在test目录下

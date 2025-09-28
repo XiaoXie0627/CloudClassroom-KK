@@ -1,9 +1,13 @@
 package com.ymcc.common.exception;
 import com.ymcc.common.result.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import javax.validation.Valid;
+import java.util.List;
 
 /**
  * 全局异常处理器
@@ -29,7 +33,6 @@ public class GlobalExceptionHandler {
         log.error("BusinessException", e);
         return ResponseResult.error( e.getMessage(),String.valueOf(e.getCode()));
     }
-
     @ExceptionHandler(RuntimeException.class)
     public ResponseResult runtimeExceptionHandler(RuntimeException e) {
         log.error("RuntimeException", e);
@@ -38,6 +41,12 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseResult methodArgumentNotValidExceptionHandler(MethodArgumentNotValidException e) {
         log.error("ValidException", e);
-        return ResponseResult.error("系统错误",String.valueOf(ErrorCode.SYSTEM_ERROR.getCode()));
+        List<ObjectError> allErrors = e.getBindingResult().getAllErrors();
+        //这不是八股 为什么要使用StringBuider 对于常变的字符串使用StringBuider提升效率 减少String内存池的占用
+        StringBuilder validMessage = new StringBuilder();
+        for (ObjectError allError : allErrors) {
+            validMessage.append(allError.getDefaultMessage()).append("and");
+        }
+        return ResponseResult.error(""+validMessage,String.valueOf(ErrorCode.VALIDOPERATION_ERROR.getCode()));
     }
 }
