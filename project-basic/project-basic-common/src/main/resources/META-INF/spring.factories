@@ -1,4 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
  com.ymcc.common.config.MybatisConfig,\
- com.ymcc.common.exception.GlobalExceptionHandler
+ com.ymcc.common.exception.GlobalExceptionHandler,\
+ com.ymcc.common.config.RedisConfig
 

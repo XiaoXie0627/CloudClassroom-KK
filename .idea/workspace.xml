@@ -7,18 +7,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day02-异常和响应工具封装">
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/resources/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
+    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day02-异常处理经验时将错误信息简化处理&amp;抽离公共服务配置实现SPI自动装配">
+      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/Constants/BusinessConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/conifg/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/dto/CodeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/test/java/com/ymcc/scommon/TestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/ErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-basic/ymcc-basic-dependency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-basic/ymcc-basic-dependency/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/controller/VerifyCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/controller/VerifyCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/VerifyCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/VerifyCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/impl/VerifyCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/impl/VerifyCodeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -83,49 +91,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Maven.itsource-ymcc [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ymcc-service-system [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ymcc-service-uaa [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceCommon.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceSystemApp (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceSystemApp.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceUaaApp.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceUserApp.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Software/KKProject/itsource-ymcc/project-basic/project-basic-common/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.CodeGeneratorUser.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.GenteratorCode (1).executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.GenteratorCode.executor&quot;: &quot;Debug&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "JUnit.TestDemo.testRedis.executor": "Debug",
+    "Maven.itsource-ymcc [clean].executor": "Run",
+    "Maven.ymcc-service-system [clean].executor": "Run",
+    "Maven.ymcc-service-uaa [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.ServiceCommon.executor": "Debug",
+    "Spring Boot.ServiceSystemApp (1).executor": "Debug",
+    "Spring Boot.ServiceSystemApp.executor": "Debug",
+    "Spring Boot.ServiceUaaApp.executor": "Debug",
+    "Spring Boot.ServiceUserApp.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Software/KKProject/itsource-ymcc/project-basic/project-basic-common/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.CodeGeneratorUser.executor": "Run",
+    "应用程序.GenteratorCode (1).executor": "Run",
+    "应用程序.GenteratorCode.executor": "Debug"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -149,11 +159,11 @@
       <recent name="com.ymcc.service.system" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ymcc.scommon.conifg" />
       <recent name="com.ymcc.common.config" />
       <recent name="com.xhh.service.conifg" />
       <recent name="com.xhh.service" />
       <recent name="com.ymcc.service" />
-      <recent name="com.ymcc.gencode" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -166,13 +176,29 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceSystemApp">
-    <configuration name="ServiceCommon" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ServiceCommon">
+    <configuration name="TestDemo.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ymcc-common" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xhh.service.ServiceCommon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xhh.service.*" />
+          <option name="PATTERN" value="com.ymcc.scommon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ymcc.scommon" />
+      <option name="MAIN_CLASS_NAME" value="com.ymcc.scommon.TestDemo" />
+      <option name="METHOD_NAME" value="testRedis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceCommon" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ymcc-common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.scommon.ServiceCommon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ymcc.scommon.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,19 +232,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceUaaApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ymcc-service-uaa" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.service.uaa.ServiceUaaApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ymcc.service.uaa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServiceUserApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ymcc-service-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.service.user.ServiceUserApp" />
@@ -234,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServiceCommon" />
+        <item itemvalue="JUnit.TestDemo.testRedis" />
         <item itemvalue="Spring Boot.ServiceSystemApp" />
         <item itemvalue="Spring Boot.ServiceSystemApp (1)" />
         <item itemvalue="Spring Boot.ServiceUserApp" />
-        <item itemvalue="Spring Boot.ServiceUaaApp" />
-        <item itemvalue="Spring Boot.ServiceCommon" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +293,7 @@
       <workItem from="1758927294029" duration="11368000" />
       <workItem from="1758976440293" duration="12526000" />
       <workItem from="1759007976577" duration="3632000" />
-      <workItem from="1759028659551" duration="3093000" />
+      <workItem from="1759028659551" duration="17410000" />
     </task>
     <task id="LOCAL-00001" summary="day01 基础环境搭建">
       <option name="closed" value="true" />
@@ -346,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758988479995</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="day02-异常处理经验时将错误信息简化处理&amp;抽离公共服务配置实现SPI自动装配">
+      <option name="closed" value="true" />
+      <created>1759032071710</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1759032071710</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,13 +379,24 @@
     <MESSAGE value="day02-protest" />
     <MESSAGE value="day02-数据库连接问题未解决" />
     <MESSAGE value="day02-异常和响应工具封装" />
-    <option name="LAST_COMMIT_MESSAGE" value="day02-异常和响应工具封装" />
+    <MESSAGE value="day02-异常处理经验时将错误信息简化处理&amp;抽离公共服务配置实现SPI自动装配" />
+    <option name="LAST_COMMIT_MESSAGE" value="day02-异常处理经验时将错误信息简化处理&amp;抽离公共服务配置实现SPI自动装配" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/impl/VerifyCodeServiceImpl.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.util.HashMap" memberName="table" />
         <PinnedItemInfo parentTag="java.util.HashMap" memberName="entrySet" />
+        <PinnedItemInfo parentTag="org.springframework.data.redis.core.RedisTemplate" memberName="connectionFactory" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

@@ -13,7 +13,8 @@ public enum ErrorCode {
     FORBIDDEN_ERROR(40300, "禁止访问"),
     SYSTEM_ERROR(50000, "系统内部异常"),
     OPERATION_ERROR(50001, "操作失败"),
-    VALIDOPERATION_ERROR(50002, "校验通过失败");
+    VALIDOPERATION_ERROR(50002, "校验通过失败"),
+    DISABLE_CLICK(50003, "请勿短时间内重复点击");
     /**
      * 状态码
      */
