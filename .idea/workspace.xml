@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day03-验证码实现">
+    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day03-验证码bug修复">
       <change afterPath="$PROJECT_DIR$/ymcc-api/ymcc-api-uaa/src/main/java/com/ymcc/apiuaa/LoginFeignAPI.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/dto/PhoneRegisterDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
@@ -297,7 +297,7 @@
       <workItem from="1758976440293" duration="12526000" />
       <workItem from="1759007976577" duration="3632000" />
       <workItem from="1759028659551" duration="25731000" />
-      <workItem from="1759104438797" duration="8180000" />
+      <workItem from="1759104438797" duration="8576000" />
     </task>
     <task id="LOCAL-00001" summary="day01 基础环境搭建">
       <option name="closed" value="true" />
@@ -379,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759092843112</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="day03-验证码bug修复">
+      <option name="closed" value="true" />
+      <created>1759112753067</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1759112753067</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +401,8 @@
     <MESSAGE value="day02-异常和响应工具封装" />
     <MESSAGE value="day02-异常处理经验时将错误信息简化处理&amp;抽离公共服务配置实现SPI自动装配" />
     <MESSAGE value="day03-验证码实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="day03-验证码实现" />
+    <MESSAGE value="day03-验证码bug修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="day03-验证码bug修复" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
