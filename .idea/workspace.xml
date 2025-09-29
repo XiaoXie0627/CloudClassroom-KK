@@ -7,25 +7,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day02-异常处理经验时将错误信息简化处理&amp;抽离公共服务配置实现SPI自动装配">
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/Constants/BusinessConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/conifg/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/dto/CodeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/test/java/com/ymcc/scommon/TestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+    <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day03-验证码实现">
+      <change afterPath="$PROJECT_DIR$/ymcc-api/ymcc-api-uaa/src/main/java/com/ymcc/apiuaa/LoginFeignAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/dto/PhoneRegisterDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/ErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-api/ymcc-api-uaa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-api/ymcc-api-uaa/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-basic/ymcc-basic-dependency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-basic/ymcc-basic-dependency/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/controller/VerifyCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/controller/VerifyCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/VerifyCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/VerifyCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/conifg/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/dto/CodeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/dto/CodeDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/impl/VerifyCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/impl/VerifyCodeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/java/com/ymcc/suaa/config/UaaMybatisPlusConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/java/com/ymcc/suaa/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/java/com/ymcc/suaa/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/ServiceUserApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/ServiceUserApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/config/UserMybatisPlusConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -113,7 +116,7 @@
     "Spring Boot.ServiceUserApp.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Software/KKProject/itsource-ymcc/project-basic/project-basic-common/src/main/resources",
+    "last_opened_file_path": "E:/Software/hm-project/hm-dingping/hm-dianping",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -293,7 +296,8 @@
       <workItem from="1758927294029" duration="11368000" />
       <workItem from="1758976440293" duration="12526000" />
       <workItem from="1759007976577" duration="3632000" />
-      <workItem from="1759028659551" duration="17410000" />
+      <workItem from="1759028659551" duration="25731000" />
+      <workItem from="1759104438797" duration="8180000" />
     </task>
     <task id="LOCAL-00001" summary="day01 基础环境搭建">
       <option name="closed" value="true" />
@@ -367,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759032071710</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="day03-验证码实现">
+      <option name="closed" value="true" />
+      <created>1759092843112</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1759092843112</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,18 +392,10 @@
     <MESSAGE value="day02-数据库连接问题未解决" />
     <MESSAGE value="day02-异常和响应工具封装" />
     <MESSAGE value="day02-异常处理经验时将错误信息简化处理&amp;抽离公共服务配置实现SPI自动装配" />
-    <option name="LAST_COMMIT_MESSAGE" value="day02-异常处理经验时将错误信息简化处理&amp;抽离公共服务配置实现SPI自动装配" />
+    <MESSAGE value="day03-验证码实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="day03-验证码实现" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ymcc-service/ymcc-common/src/main/java/com/ymcc/scommon/service/impl/VerifyCodeServiceImpl.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.util.HashMap" memberName="table" />

@@ -31,19 +31,16 @@ public class GlobalExceptionHandler {
 //    }
 
     @ExceptionHandler(BusinessException.class)
-    @Order(0)
     public ResponseResult businessExceptionHandler(BusinessException e) {
         log.error("BusinessException", e);
         return ResponseResult.error(e.getMessage(), String.valueOf(e.getCode()));
     }
 
     @ExceptionHandler(RuntimeException.class)
-    @Order(10000)
     public ResponseResult runtimeExceptionHandler(RuntimeException e) {
         log.error("RuntimeException", e);
         return ResponseResult.error("系统错误", String.valueOf(ErrorCode.SYSTEM_ERROR.getCode()));
     }
-    @Order(10)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseResult methodArgumentNotValidExceptionHandler(MethodArgumentNotValidException e) {
         log.error("ValidException", e);

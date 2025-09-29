@@ -3,6 +3,9 @@ package com.ymcc.suser.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ymcc.pojo.domain.User;
+import dto.PhoneRegisterDTO;
+
+import javax.validation.Valid;
 
 /**
  * <p>
@@ -13,5 +16,7 @@ import com.ymcc.pojo.domain.User;
  * @since 2025-09-27
  */
 public interface IUserService extends IService<User> {
+
+    void phoneRegister(@Valid PhoneRegisterDTO phoneRegisterDTO);
 
 }

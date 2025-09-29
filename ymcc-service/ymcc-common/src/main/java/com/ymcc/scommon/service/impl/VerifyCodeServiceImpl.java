@@ -4,15 +4,16 @@ import com.ymcc.common.Constants.BusinessConstants;
 import com.ymcc.common.exception.BusinessException;
 import com.ymcc.common.exception.ErrorCode;
 import com.ymcc.common.util.AssertUtil;
-import com.ymcc.common.util.CodeGenerateUtils;
+import com.ymcc.common.util.StrUtils;
 import com.ymcc.common.util.VerifyCodeUtils;
-import com.ymcc.scommon.dto.CodeDTO;
+import com.ymcc.common.dto.CodeDTO;
 import com.ymcc.scommon.service.VerifyCodeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
@@ -24,8 +25,10 @@ import java.util.concurrent.TimeUnit;
 @Service
 @Slf4j
 public class VerifyCodeServiceImpl implements VerifyCodeService {
-    @Autowired
+
+    @Resource
     public RedisTemplate<Object,Object> redisTemplate;
+
     /**
      * 短信验证码
      * @param phone 电话
@@ -38,8 +41,8 @@ public class VerifyCodeServiceImpl implements VerifyCodeService {
         String key = BusinessConstants.SMS_CODE + phone;
         //2.验证码是否存在
         Object obj = redisTemplate.opsForValue().get(key);
-        CodeDTO codeDTO = null;
-        String smsCode = null;
+        CodeDTO codeDTO = new CodeDTO();
+        String smsCode;
         if (obj != null){
             //3.存在
             // 判断是否是一分钟内防重
@@ -50,13 +53,14 @@ public class VerifyCodeServiceImpl implements VerifyCodeService {
             }
             smsCode = codeDTO.getCode();
             //将验证码返回并且刷新过期时间（复用Code节省资源）
-        }
-        else{
+        }else{
             //4.不存在
             //生成验证码存入Redis中并发送验证码短信，且通知用户发送成功
-            smsCode = VerifyCodeUtils.generateVerifyCode(4);
+            smsCode = StrUtils.getRandomString(4);
         }
-        redisTemplate.opsForValue().set(key,smsCode,5, TimeUnit.MINUTES);
+        codeDTO.setCode(smsCode);
+        codeDTO.setTime(Calendar.getInstance().getTimeInMillis());
+        redisTemplate.opsForValue().set(key,codeDTO,5, TimeUnit.MINUTES);
         //短信服务
         log.info("发送验证码成功，请在5分钟内使用：{}",smsCode);
     }

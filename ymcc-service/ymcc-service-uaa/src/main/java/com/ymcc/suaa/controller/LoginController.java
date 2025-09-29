@@ -1,20 +1,33 @@
 package com.ymcc.suaa.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ymcc.common.exception.BusinessException;
+import com.ymcc.common.exception.ErrorCode;
 import com.ymcc.common.result.PageList;
 import com.ymcc.common.result.ResponseResult;
 import com.ymcc.pojo.domain.Login;
 import com.ymcc.pojo.query.LoginQuery;
 import com.ymcc.suaa.service.ILoginService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@Slf4j
 @RestController
 @RequestMapping("/login")
 public class LoginController {
 
     @Autowired
     public ILoginService loginService;
+
+    @RequestMapping(value="/register",method= RequestMethod.POST)
+    public ResponseResult register(@RequestBody Login login){
+        boolean bl = loginService.save(login);
+        if (!bl){
+            throw new BusinessException(ErrorCode.OPERATION_ERROR);
+        }
+        return ResponseResult.success(login);
+    }
 
     /**
     * 保存和修改公用的

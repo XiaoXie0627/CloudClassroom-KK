@@ -6,8 +6,11 @@ import com.ymcc.common.result.ResponseResult;
 import com.ymcc.pojo.domain.User;
 import com.ymcc.pojo.query.UserQuery;
 import com.ymcc.suser.service.IUserService;
+import dto.PhoneRegisterDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/user")
@@ -64,5 +67,16 @@ public class UserController {
         Page<User> page = new Page<User>(query.getPage(),query.getRows());
         page = userService.page(page);
         return ResponseResult.success(new PageList<User>(page.getTotal(),page.getRecords()));
+    }
+
+    /**
+     * 用户注册
+     * @param phoneRegisterDTO 注册参数
+     * @return 成功
+     */
+    @PostMapping("/register")
+    public ResponseResult phoneRegister(@RequestBody @Valid PhoneRegisterDTO phoneRegisterDTO){
+        userService.phoneRegister(phoneRegisterDTO);
+        return ResponseResult.success();
     }
 }

@@ -1,4 +1,4 @@
-package com.ymcc.scommon.dto;
+package com.ymcc.common.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

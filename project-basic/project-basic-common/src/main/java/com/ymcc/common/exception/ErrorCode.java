@@ -14,7 +14,8 @@ public enum ErrorCode {
     SYSTEM_ERROR(50000, "系统内部异常"),
     OPERATION_ERROR(50001, "操作失败"),
     VALIDOPERATION_ERROR(50002, "校验通过失败"),
-    DISABLE_CLICK(50003, "请勿短时间内重复点击");
+    DISABLE_CLICK(50003, "请勿短时间内重复点击"),
+    EXCEPTION_SMSCODE(50004, "验证码异常");
     /**
      * 状态码
      */
