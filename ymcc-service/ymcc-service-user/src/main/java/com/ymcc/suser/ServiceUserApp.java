@@ -3,6 +3,7 @@ package com.ymcc.suser;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -12,10 +13,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @time 2025/9/25 21:50
  */
 //事务管理
-@EnableTransactionManagement
-@SpringBootApplication
 @MapperScan("com.ymcc.suser.mapper")
-@EnableFeignClients
+@EnableFeignClients(basePackages = "com.ymcc.apiuaa")
+@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class})
 public class ServiceUserApp {
     public static void main(String[] args) {
         SpringApplication.run(ServiceUserApp.class,args);

@@ -3,7 +3,7 @@ package com.ymcc.suser.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.ymcc.pojo.domain.User;
-import dto.PhoneRegisterDTO;
+import com.ymcc.pojo.dto.PhoneRegisterDTO;
 
 import javax.validation.Valid;
 

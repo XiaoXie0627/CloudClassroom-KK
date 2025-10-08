@@ -23,6 +23,10 @@ public class RedisConfig {
 
 
     //使用JSON进行序列化
+    /*
+    这个不像是黑马的Redis配置，这个是所有的数据结构类型都采用JSON结构存储
+    而不是只有对象才采用JSON格式
+     */
     @Bean
     public RedisTemplate<Object, Object> redisTemplate() {
         RedisTemplate<Object, Object> redisTemplate = new RedisTemplate<>();

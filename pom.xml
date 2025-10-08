@@ -73,7 +73,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-<!--            MP管理-->
+            <!-- MP管理 -->
             <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-bom</artifactId>

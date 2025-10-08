@@ -17,7 +17,7 @@ public class GenteratorCode {
 
     public static void main(String[] args) throws InterruptedException {
         //用来获取Mybatis-Plus.properties文件的配置信息
-        ResourceBundle rb = ResourceBundle.getBundle("mybatiesplus-config-uaa"); //不要加后缀
+        ResourceBundle rb = ResourceBundle.getBundle("mybatiesplus-config-course"); //不要加后缀
         AutoGenerator mpg = new AutoGenerator();
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
@@ -46,15 +46,18 @@ public class GenteratorCode {
 
         // 你要生成哪些表
         strategy.setInclude(new String[]{
-                "oauth_client_details",
-                "oauth_code",
-                "t_login",
-                "t_login_log",
-                "t_login_role",
-                "t_menu",
-                "t_permission",
-                "t_role",
-                "t_role_permission"
+                "t_course",
+                "t_course_chapter",
+                "t_course_collect",
+                "t_course_detail",
+                "t_course_market",
+                "t_course_resource",
+                "t_course_summary",
+                "t_course_teacher",
+                "t_course_type",
+                "t_course_user_learn",
+                "t_course_view_log",
+                "t_teacher"
         }); // 需要生成的表
 
         mpg.setStrategy(strategy);
@@ -85,7 +88,7 @@ public class GenteratorCode {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 //合并好的内容输出到哪儿？
-                return rb.getString("OutputDir")+ "/com/ymcc/service/controller/" + tableInfo.getEntityName() + "Controller.java";
+                return rb.getString("OutputDir")+ "/com/ymcc/scommon/controller/" + tableInfo.getEntityName() + "Controller.java";
             }
         });
         //query的输出配置
@@ -108,7 +111,7 @@ public class GenteratorCode {
         focList.add(new FileOutConfig("/templates/mapper.xml.vm") {
             @Override
             public String outputFile(TableInfo tableInfo) {
-                return rb.getString("OutputDirXml")+ "/com/ymcc/service/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
+                return rb.getString("OutputDirXml")+ "/com/ymcc/scommon/mapper/" + tableInfo.getEntityName() + "Mapper.xml";
             }
         });
         cfg.setFileOutConfigList(focList);

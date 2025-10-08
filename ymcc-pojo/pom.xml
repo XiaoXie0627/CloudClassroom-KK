@@ -15,6 +15,7 @@
         <module>ymcc-pojo-system</module>
         <module>ymcc-pojo-uaa</module>
         <module>ymcc-pojo-user</module>
+        <module>ymcc-pojo-course</module>
     </modules>
 
     <properties>

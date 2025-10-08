@@ -8,7 +8,129 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1427ad37-08b7-4f00-8dcb-ee0f3e3e8385" name="更改" comment="day03-验证码bug修复">
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-course.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseChapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseCollect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseMarket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseUserLearn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/CourseViewLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/domain/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseChapterQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseCollectQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseDetailQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseMarketQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseResourceQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseSummaryQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseTeacherQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseTypeQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseUserLearnQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/CourseViewLogQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-course/src/main/java/com/ymcc/pojo/query/TeacherQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/ServiceCourseApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseChapterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseCollectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseMarketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseSummaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseTeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseUserLearnController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/CourseViewLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseChapterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseCollectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseMarketMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseResourceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseSummaryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseTeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseUserLearnMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/CourseViewLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseChapterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseCollectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseMarketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseSummaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseTeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseUserLearnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ICourseViewLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/ITeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseChapterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseCollectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseMarketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseResourceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseSummaryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseTeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseUserLearnServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/CourseViewLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/java/com/ymcc/scourse/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseChapterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseCollectMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseMarketMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseResourceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseSummaryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseTeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseUserLearnMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/CourseViewLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-course/src/main/resources/com/ymcc/scourse/mapper/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/java/com/ymcc/suaa/config/DataSourceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/resources/registry.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/config/DataSourceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/registry.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-basic-common/src/main/java/com/ymcc/common/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/java/com/ymcc/gencode/GenteratorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/java/com/ymcc/gencode/GenteratorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-uaa.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-uaa.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-user.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-basic/project-gen-code/src/main/resources/mybatiesplus-config-user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-pojo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/dto/PhoneRegisterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-pojo/ymcc-pojo-user/src/main/java/com/ymcc/pojo/dto/PhoneRegisterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/java/com/ymcc/suaa/ServiceUaaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-uaa/src/main/java/com/ymcc/suaa/ServiceUaaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/ServiceUserApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/ServiceUserApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/java/com/ymcc/suser/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/AccountFlowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/AccountFlowMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserAccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserAccountMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserAddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserAddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserBaseInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserBaseInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserGrowLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserGrowLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserRealInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ymcc-service/ymcc-service-user/src/main/resources/com/ymcc/suser/UserRealInfoMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +141,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,79 +196,84 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;JUnit.TestDemo.testRedis.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.itsource-ymcc [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ymcc-service-system [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.ymcc-service-uaa [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceCommon.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceSystemApp (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceSystemApp.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceUaaApp.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceUserApp.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Software/hm-project/hm-dingping/hm-dianping&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.CodeGeneratorUser.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.GenteratorCode (1).executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.GenteratorCode.executor&quot;: &quot;Debug&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "JUnit.RedisTest.executor": "Debug",
+    "JUnit.RedisTest.test.executor": "Debug",
+    "JUnit.TestDemo.testRedis.executor": "Debug",
+    "Maven.itsource-ymcc [clean].executor": "Run",
+    "Maven.ymcc-service-system [clean].executor": "Run",
+    "Maven.ymcc-service-uaa [clean].executor": "Run",
+    "Maven.ymcc-service-user [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.ServiceCommon.executor": "Debug",
+    "Spring Boot.ServiceCourseApp.executor": "Debug",
+    "Spring Boot.ServiceSystemApp (1).executor": "Debug",
+    "Spring Boot.ServiceSystemApp.executor": "Debug",
+    "Spring Boot.ServiceUaaApp.executor": "Debug",
+    "Spring Boot.ServiceUserApp (1).executor": "Debug",
+    "Spring Boot.ServiceUserApp.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Software/KKProject/itsource-ymcc/ymcc-service/ymcc-service-course/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.CodeGeneratorUser.executor": "Run",
+    "应用程序.GenteratorCode (1).executor": "Run",
+    "应用程序.GenteratorCode.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;redis&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-course\src\main\resources" />
+      <recent name="E:\Software\KKProject\itsource-ymcc\project-basic\project-gen-code\src\main\resources" />
+      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-uaa\src\main\resources" />
+      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-user\src\main\resources" />
       <recent name="E:\Software\KKProject\itsource-ymcc\project-basic\project-basic-common\src\main\resources" />
-      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-uaa\src\main\resources\com\ymcc\service\uaa" />
-      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-user\src\main\java\com\ymcc\service\config" />
-      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-common\src\main\resources" />
-      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-user\src\main\java\com\ymcc\service\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-course\src\main\resources\com\ymcc\scourse" />
       <recent name="E:\Software\KKProject\itsource-ymcc\project-basic\project-basic-common\src\test\java" />
       <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-user\src\main\resources\com\ymcc\service" />
       <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-uaa\src\main\resources\com\ymcc\service\uaa" />
       <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-system\src\main\resources\com\ymcc\service\system" />
-      <recent name="E:\Software\KKProject\itsource-ymcc\ymcc-service\ymcc-service-system\src\main\resources\com\ymcc\service" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ymcc.service.uaa" />
       <recent name="com.ymcc.service.system" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ymcc.scourse.config" />
+      <recent name="com.ymcc.scommon" />
       <recent name="com.ymcc.scommon.conifg" />
       <recent name="com.ymcc.common.config" />
       <recent name="com.xhh.service.conifg" />
-      <recent name="com.xhh.service" />
-      <recent name="com.ymcc.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,68 +286,70 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceCommon">
-    <configuration name="TestDemo.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ymcc-common" />
+  <component name="RunManager" selected="JUnit.RedisTest.test">
+    <configuration name="GenteratorCode (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ymcc.gencode.GenteratorCode" />
+      <module name="project-gen-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ymcc.scommon.*" />
+          <option name="PATTERN" value="com.ymcc.gencode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ymcc.scommon" />
-      <option name="MAIN_CLASS_NAME" value="com.ymcc.scommon.TestDemo" />
-      <option name="METHOD_NAME" value="testRedis" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenteratorCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ymcc.gencode.GenteratorCode" />
+      <module name="project-gen-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ymcc.gencode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ymcc-service-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ymcc.scourse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ymcc.scourse" />
+      <option name="MAIN_CLASS_NAME" value="com.ymcc.scourse.RedisTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ymcc-service-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ymcc.scourse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ymcc.scourse" />
+      <option name="MAIN_CLASS_NAME" value="com.ymcc.scourse.RedisTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceCommon" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ymcc-common" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.scommon.ServiceCommon" />
+    <configuration name="ServiceCourseApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ymcc-service-course" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.scourse.ServiceCourseApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ymcc.scommon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceSystemApp (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ymcc-service-system" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.service.system.ServiceSystemApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ymcc.service.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceSystemApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ymcc-service-system" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.ssystem.ServiceSystemApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ymcc.ssystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceUserApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ymcc-service-user" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ymcc.service.user.ServiceUserApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ymcc.service.user.*" />
+          <option name="PATTERN" value="com.ymcc.scourse.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,11 +359,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceCommon" />
-        <item itemvalue="JUnit.TestDemo.testRedis" />
-        <item itemvalue="Spring Boot.ServiceSystemApp" />
-        <item itemvalue="Spring Boot.ServiceSystemApp (1)" />
-        <item itemvalue="Spring Boot.ServiceUserApp" />
+        <item itemvalue="JUnit.RedisTest.test" />
+        <item itemvalue="JUnit.RedisTest" />
+        <item itemvalue="Spring Boot.ServiceCourseApp" />
+        <item itemvalue="应用程序.GenteratorCode (1)" />
+        <item itemvalue="应用程序.GenteratorCode" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +408,14 @@
       <workItem from="1759028659551" duration="25731000" />
       <workItem from="1759104438797" duration="8576000" />
       <workItem from="1759113087361" duration="85000" />
+      <workItem from="1759113203533" duration="50000" />
+      <workItem from="1759183800467" duration="7056000" />
+      <workItem from="1759359744290" duration="596000" />
+      <workItem from="1759709028608" duration="701000" />
+      <workItem from="1759731821402" duration="5908000" />
+      <workItem from="1759829039181" duration="13590000" />
+      <workItem from="1759861493342" duration="241000" />
+      <workItem from="1759889358999" duration="8434000" />
     </task>
     <task id="LOCAL-00001" summary="day01 基础环境搭建">
       <option name="closed" value="true" />
@@ -376,7 +513,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759113116150</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="day03-验证码bug修复">
+      <option name="closed" value="true" />
+      <created>1759113243638</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1759113243638</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
